@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <style>
+        p {
+            color: hotpink;
+        }
+
+        ol {
+            color: fuchsia;
+        }
+
+        ul {
+            color: violet;
+        }
+
+        li {
+            color: salmon
+        }
+
+        h3 {
+            color: deeppink;
+        }
+
+        dd {
+            color: hotpink;
+        }
+
+        dt {
+            color: hotpink;
+        }
+    </style>
+
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+
+<body>
+
+    <h1 style="color: hotpink;">Trabajo Práctico</h1>
+    <h2 style="color: palevioletred;">Catalina Petasny</h2>
+
+    <h3>
+        1.1- ¿Qué significa CSS?
+    </h3>
+
+    <p>
+        <b>
+            R: CSS son las siglas de <u>"Cascading Style Sheet"</u> (Que en español significa Hojas de estilo en
+            cascada)
+        </b>
+    </p> <br>
+
+    <h3>
+        1.2- ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS? (es para 🧠)
+    </h3>
+
+    <p>
+        <b>
+            R: El CSS sirve para darle estilo y vida a la página y posicionarlo visualemente.
+        </b>
+    </p> <br>
+
+    <h3>
+        1.3- ¿A qué se llama regla de CSS?
+    </h3>
+
+    <p>
+        <b>
+            R: La regla de CSS es un conjunto de propiedades y valores que se aplican a una o varias etiquetas.
+        </b>
+    </p> <br>
+
+    <h3>
+        1.4- ¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva <br>
+        explicar sus elementos.
+    </h3>
+
+    <p>
+        <b>
+            R: La anatomía de la regla de CSS está compuesta por un selector, declaración, propiedades y el valor de las
+            propiedades.
+        </b> <br> <br> <br>
+
+        <img src="reglaanatomia.jpg" width="400px" alt="anatomíareglacss">
+    </p>
+
+    <p><u><b>Anatomía de una regla</b></u></p>
+
+    <dl>
+
+        <dt><b>Selector</b></dt>
+        <dd>
+            <b>
+                El selector toma el/los elemento/s a dar estilo. Para darle estilo a un elemento diferente solo hay que
+                <br>
+                cambiar el selector.
+            </b>
+        </dd> <br>
+
+        <dt><b>Declaración</b></dt>
+        <dd>
+            <b>
+                La declaración aplica las propiedades que se quiera dar al elemento seleccionado en el selector.
+            </b>
+        </dd> <br>
+
+        <dt><b>Propiedades</b></dt>
+        <dd>
+            <b>
+                Las propiedades permiten dar el estilo al html. La propiedad es lo que le da color a las letras de los
+                <br>
+                párrafos, siempre se ubican a la izquierda.
+            </b>
+        </dd> <br>
+
+        <dt><b>Valor de las propiedades</b></dt>
+        <dd>
+            <b>
+                Las propiedades siempre tienen que tener un valor, cada una tiene valores definidos. Cada valor se ubica
+                <br>
+                a la derecha
+            </b>
+        </dd>
+    </dl> <br>
+
+    <h3>
+        1.5- ¿Qué es un selector en CSS?
+    </h3>
+
+    <p>
+        <b>
+            R: Un selector es la primera parte de un elemento de una regla de CSS. Este toma el/los elemento/s a dar
+            <br>
+            estilo.
+        </b>
+    </p>
+
+    <h3>
+        1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.
+    </h3>
+
+    <dl>
+        <dt><b><u>Selector universal</u></b></dt>
+        <dd>
+            <b>
+                El selector universal <u>nos permite ponerle estilo a todos los elementos HTML de un documento.</u> <br>
+                Se indica mediante el * <br>
+                <u>Ejemplo:</u><br>
+                * { <br>
+                color:red; <br>
+                }
+
+            </b>
+        </dd> <br>
+
+        <dt><b><u>Selector de clase</u></b></dt>
+        <dd>
+            <b>
+                Los selectores de clases siempre inician con un . (punto). Los usuarios reconocen el punto y lo <br>
+                distinguen del resto de los selectores. <br><br>
+                Ejemplo: &lt;p&gt; class="primer-parrafo">Texto de un párrafo&lt;/p&gt; <br> <br>
+
+                Para definir en HTML en el uso de los selectores de clase se utiliza el atributo "class". En cambio, en
+                <br>
+                css se aplica de la siguiente manera: <br><br>
+
+                .primer-parrafo { <br>
+                font-size: 2em; <br>
+                }
+            </b>
+        </dd> <br>
+
+        <dt><b><u>Selector de ID</u></b></dt>
+        <dd>
+            <b>
+                El selector de ID es igual al de clases, pero se debe aplicar a un único HTML de la página. <br>
+                Se debe a que el atributo ID de HTML identifica a un elemento HTML mediante un nombre. <br> <br>
+                <u>Ejemplo:</u> <br>
+                &lt;h1 id="titulo"&gt;Título Principal&lt;/h1&gt; <br><br>
+
+                Para aplicar CSS solamente ID al título, de debe seleccionar dicho ID, utilizar el "#" y seguido de eso
+                <br>
+                el nombre. Eso quedaría de la siguiente manera: <br><br>
+                #titulo { <br>
+                color: violet;
+                }
+            </b>
+        </dd><br>
+
+        <dt><b><u>Selector de etiquetas</u></b></dt>
+        <dd>
+            <b>
+                Se le aplican propiedades CSS a una etiqueta. Se identifica sin utilizar &lt; &gt;. <br><br>
+                <u>Ejemplo:</u> <br>
+                p { <br>
+                color:red; <br>
+                }
+            </b>
+        </dd>
+
+        <dt><b><u>Selector descendente</u></b></dt>
+        <dd>
+            <b>
+                Con el selector descendente se selecciona un elemneto que está dentro de otro del mismo tipo. <br>
+                estos selectores siempre están conformados por dos o más selectores separados entre ellos. El último
+                <br>
+                será el elemento HTML que se le aplicará las propiedades CSS <br><br>
+                <u>Ejemplo:</u> <br>
+                p span { <br>
+                color:green; <br>
+                } <br>
+            </b>
+        </dd>
+    </dl>
+
+    <h3>
+        1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?
+    </h3>
+
+    <ol>Funcionamiento del CSS
+        <li>El navegador recibe el HTML mediante la red.</li> <br>
+
+        <li>El HTML se convierte en un DOM <i>(Modelo de objetos del documento)</i>. El DOM representa el documento en
+            <br>
+            la memoria del ordenador
+        </li> <br>
+
+        <li>El navegador va a buscar la mayor parte de los recursos vinculados al HTML, ya sean imágenes, videos hasta
+            <br>
+            incluso el CSS vinculado
+        </li> <br>
+
+        <li>
+            El navegador analiza el CSS y ordena en diferentes cubos las distintas reglas según la clase de selector.
+            <br>
+            Para cada tipo de selector que se encuentre, calcula que reglas deben aplicarse y a que nodos en el DOM se
+            <br>
+            les aplica el el estilo según corresponda <br>
+        </li> <br>
+
+        <li>
+            El árbol de la renderización presenta la estructura en la que los nodos tienen que aparecer después de
+            aplicar las reglas.
+        </li><br>
+
+        <li>
+            En la pantalla se muestra el aspecto visual de la página.
+        </li>
+    </ol>
+
+    <h3>
+        1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?
+    </h3>
+
+    <p>
+        <b>
+            R: Las tres formas de vincular CSS con HTML son las siguientes:
+        </b>
+
+    <ul>Etiqueta style
+        <li>En el HTML, dentro de la etiqueta &lt;head&gt; se utiliza la etiqueta &lt;style&gt;, es decir que los CSS se
+            <br>
+            aplican al mismo documento HTML.
+        </li> <br>
+    </ul> 
+
+    <ul>Utilizando el atributo style
+        <li>En el archivo HTML se le aplican los estilos directamente a la etiqueta</li>
+    </ul> 
+
+    <ul> Utilizando un archivo externo
+        <li>Esta opción nos permite vincular un documento HTML con uno CSS. Los archivos CSS tienen la extenión .css <br>
+            seguido del nombre del proyecto, ya sea estilos.css o style.css. <br>
+            Se pueden ordenar los archivos css dentro de una carpeta llamada css. En el &lt;head&gt; se debe utilizar la etiqueta &lt;link&gt; 
+        </li>
+
+    </ul>
+
+    </p>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
